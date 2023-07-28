@@ -1,0 +1,212 @@
+/* Base */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* height */
+    --header-height: 68px;
+
+    /* font */
+    --system-ui: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+
+    /* color */
+    --primary-color: #e60023;
+    --text-color-default: #111;
+
+    /* bg-color */
+    --bg-gray-color: #ddd;
+    --white-color: #fff;
+}
+
+.cWc {
+    color: var(--white-color);
+}
+
+.BgWc {
+    background-color: var(--white-color);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 5000px;
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Display */
+
+.dfcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dfac {
+    display: flex;
+    align-items: center;
+}
+
+.cg-12 {
+    column-gap: 12px;
+}
+
+.d-ilB {
+    display: inline-block;
+}
+
+.d-Bl {
+    display: block;
+}
+
+.d-fl {
+    display: flex;
+}
+
+/* Containers */
+
+.appNavBar {
+    width: 1280px;
+    max-width: calc(100% - 36px);
+    margin: 0 auto;
+}
+
+.appMain__oV {
+    width: 1200px;
+    max-width: calc(100% - 36px);
+    margin: 0 auto;
+}
+
+/* Height */
+.ht-Vh {
+    height: 100vh;
+}
+
+/* Margin */
+.mb-6 {
+    margin-bottom: 6px;
+}
+
+.m-16 {
+    margin: 16px;
+}
+
+.p-12 {
+    padding: 12px;
+}
+
+.pt-32 {
+    padding-top: 32px;
+}
+
+.brs-10 {
+    border-radius: 10px;
+}
+
+.brs-20 {
+    border-radius: 20px;
+}
+
+.brs-30 {
+    border-radius: 30px;
+}
+
+/* Btn */
+
+.Btn-sL {
+    background: var(--bg-gray-color);
+    color: var(--text-color-default);
+    transition: 0.2s;
+}
+
+.Btn-sL:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Text-decoration */
+
+.TdnH:hover {
+    text-decoration: underline;
+}
+
+/* Cursor */
+.CsP {
+    cursor: pointer;
+}
+
+/* Position */
+.PsR {
+    position: relative;
+}
+.PsA {
+    position: absolute;
+}
+
+/* Common */
+.OjFc {
+    object-fit: cover;
+}
+
+.PIsB9 {
+    bottom: 36px;
+    left: 50px;
+}
+
+.w1-h1 {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    top: -1px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.Cap-ct {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* .cap9 {
+    font-size: 4.5rem;
+} */
+
+.cap9 {
+    font-size: 3rem;
+}
+.cap3 {
+    font-size: 1.5rem;
+}
+
+/* Line Clamp */
+.line-clamp {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.5;
+}

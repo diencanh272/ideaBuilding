@@ -3,16 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ideaBuilder</title>
+        <title>iBuilder</title>
         <!-- Favicon -->
         <!-- Reset css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- Grid css -->
+        <link rel="stylesheet" href="./assets/css/grid.css" />
 
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Roboto:wght@300;400;500;700;900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap"
             rel="preconnect"
         />
         <!-- Base Css  -->
@@ -25,130 +28,359 @@
         <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <header class="Header-wrapper__oV cWc BgWc">
-            <div class="appNavBar">
-                <div class="NavBar-wrapper__oV">
-                    <div class="NavBar-logo__oV CsP dfac cg-12">
-                        <a href="#!">
-                            <img
-                                class="NavBar-logoImg__oV"
-                                src="./assets/logo/Pinterest-logo.png"
-                                alt="ideaBuilder"
-                            />
-                        </a>
+        <!-- Header -->
+        <header class="header">
+            <div class="row">
+                <div class="col">
+                    <nav class="NavBar-oV__wrapper">
+                        <div class="MobileMenu">
+                            <div class="MobileMenu-iconMenu">
+                                <em>
+                                    <svg
+                                        width="20"
+                                        height="17"
+                                        viewBox="0 0 20 17"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M1 1H19"
+                                            stroke="#E44D4E"
+                                            stroke-linecap="round"
+                                        />
+                                        <path
+                                            d="M1 9H19"
+                                            stroke="#E44D4E"
+                                            stroke-linecap="round"
+                                        />
+                                        <path
+                                            d="M1 16H19"
+                                            stroke="#E44D4E"
+                                            stroke-linecap="round"
+                                        />
+                                    </svg>
+                                </em>
+                            </div>
+                            <div class="MobileMenu-modal">
+                                <div class="MobileMenu-body">
+                                    <div class="MobileMenu-body__scroll">
+                                        <div class="MobileMenu-userWrap"></div>
+                                        <div class="MobileMenu-listWrap">
+                                            <ul class="MobileMenu-pagWrap">
+                                                <li class="MobileMenu-pagItem">
+                                                    <a
+                                                        class="MobileMenu-pagItem__link"
+                                                        href="./pagination/introduce/intro.html"
+                                                    >
+                                                        <em>
+                                                            <svg
+                                                                width="16"
+                                                                height="16"
+                                                                viewBox="0 0 6 6"
+                                                                fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <circle
+                                                                    cx="3"
+                                                                    cy="3"
+                                                                    r="3"
+                                                                    fill="#757575"
+                                                                />
+                                                                <path
+                                                                    d="M2.26514 1.94434L3.52295 1.95801C3.45003 2.236 3.39535 2.47298 3.35889 2.66895C3.32699 2.86491 3.30648 3.02897 3.29736 3.16113C3.27913 3.31152 3.27458 3.43913 3.28369 3.54395C3.29736 3.63965 3.32015 3.74219 3.35205 3.85156C3.37939 3.94271 3.42041 4.04753 3.4751 4.16602C3.52979 4.28451 3.6027 4.40299 3.69385 4.52148C3.63916 4.50326 3.57992 4.48958 3.51611 4.48047C3.45231 4.47135 3.39307 4.46452 3.33838 4.45996C3.27458 4.4554 3.21077 4.4554 3.14697 4.45996C3.08317 4.46452 3.01253 4.47135 2.93506 4.48047C2.87126 4.48958 2.79378 4.50098 2.70264 4.51465C2.61149 4.52832 2.51579 4.54655 2.41553 4.56934C2.48389 4.36426 2.5363 4.18652 2.57275 4.03613C2.61377 3.88574 2.64339 3.76042 2.66162 3.66016C2.67985 3.54167 2.69124 3.44596 2.6958 3.37305C2.6958 3.2819 2.6958 3.17936 2.6958 3.06543C2.6958 2.94694 2.6958 2.83301 2.6958 2.72363C2.6958 2.61426 2.69352 2.51855 2.68896 2.43652C2.68441 2.34993 2.67529 2.29525 2.66162 2.27246L2.59326 2.2041C2.56592 2.18132 2.5249 2.14941 2.47021 2.1084C2.42008 2.06283 2.35173 2.00814 2.26514 1.94434ZM2.75049 0.891602C2.84619 0.841471 2.94189 0.827799 3.0376 0.850586C3.13786 0.873372 3.21533 0.916667 3.27002 0.980469C3.32471 1.04427 3.34294 1.11947 3.32471 1.20605C3.31104 1.29264 3.23812 1.37695 3.10596 1.45898C2.9738 1.53646 2.85758 1.5638 2.75732 1.54102C2.65706 1.51823 2.58643 1.47038 2.54541 1.39746C2.50439 1.32454 2.49756 1.24023 2.5249 1.14453C2.55225 1.04427 2.62744 0.959961 2.75049 0.891602Z"
+                                                                    fill="#F1F1F1"
+                                                                />
+                                                            </svg>
+                                                        </em>
+                                                        <span>Giới thiệu</span>
+
+                                                        <em>
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width="7"
+                                                                height="12"
+                                                                viewBox="0 0 7 12"
+                                                                fill="none"
+                                                            >
+                                                                <path
+                                                                    d="M1 1L5.5 6L0.999999 11"
+                                                                    stroke="#757575"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                />
+                                                            </svg>
+                                                        </em>
+                                                    </a>
+                                                </li>
+                                                <li class="MobileMenu-pagItem">
+                                                    <a
+                                                        class="MobileMenu-pagItem__link"
+                                                        href="./pagination/bussiness/"
+                                                    >
+                                                        <em></em>
+                                                        <span>
+                                                            Doanh nghiệp
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="MobileMenu-pagItem">
+                                                    <a
+                                                        class="MobileMenu-pagItem__link"
+                                                        href="./pagination/blog/"
+                                                    >
+                                                        <em></em>
+                                                        <span>Blog</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="NavBar-oV__logo hide-on-md">
+                            <a href="#!">
+                                <img
+                                    src="./assets/logo/logo.svg"
+                                    alt="ideaBuilder"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="NavBar-oV__Pag hide-on-md">
+                            <ul class="NavBar-Pag__list dfcenter">
+                                <li class="NavBar-Pag__item">
+                                    <a
+                                        class="NavBar-Pag__link"
+                                        href="./pagination/introduce/intro.html"
+                                        target="_blank"
+                                    >
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="NavBar-Pag__item">
+                                    <a class="NavBar-Pag__link" href="#!">
+                                        Doanh nghiệp
+                                    </a>
+                                </li>
+                                <li class="NavBar-Pag__item">
+                                    <a class="NavBar-Pag__link" href="#!">
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
                         <div>
-                            <h1 class="NavBar-logoTitle__oV mb-6">
-                                ideaBuilder
-                            </h1>
-                            <p class="NavBar-logoSlg__oV">
-                                Your house in your eyes
-                            </p>
+                            <button class="Btn" href="#!">Đăng Nhập</button>
                         </div>
-                    </div>
-
-                    <nav class="NavBar-Pag__oV">
-                        <ul class="NavBar-Pag__list">
-                            <li class="NavBar-Pag__item">
-                                <a
-                                    class="NavBar-Pag__link m-16 d-ilB TdnH"
-                                    href="#!"
-                                >
-                                    Giới thiệu
-                                </a>
-                            </li>
-                            <li class="NavBar-Pag__item">
-                                <a
-                                    class="NavBar-Pag__link m-16 d-ilB TdnH"
-                                    href="#!"
-                                >
-                                    Doanh nghiệp
-                                </a>
-                            </li>
-                            <li class="NavBar-Pag__item">
-                                <a
-                                    class="NavBar-Pag__link m-16 d-ilB TdnH"
-                                    href="#!"
-                                >
-                                    Blog
-                                </a>
-                            </li>
-                        </ul>
                     </nav>
-
-                    <div class="NavBar-actionBtn__oV dfac cg-12">
-                        <div class="actionBtn">
-                            <a class="Btn-sL brs-20 d-ilB p-12" href="#!">
-                                Đăng ký
-                            </a>
-                        </div>
-                        <div class="actionBtn">
-                            <a class="Btn-sL brs-20 d-ilB p-12" href="#!">
-                                Đăng Nhập
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </header>
+        <div class="container">
+            <main class="main">
+                <section>
+                    <div class="row">
+                        <div
+                            class="main-intro col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+                        >
+                            <h1 class="main-intro__title">
+                                Ý tưởng cho ngôi nhà
+                            </h1>
 
-        <main class="pt-32">
-            <div class="appMain__oV d-fl">
-                <section class="Main-It">
-                    <div class="Main-It__msr">
-                        <figure class="tall3 PsR">
-                            <img
-                                class="w1-h1 OjFc brs-10"
-                                src="./assets/img/i-arc.jpg"
-                                alt=" Phong cách thiết kế"
-                            />
-                            <figcaption class="PsA cap9 Cap-ct cWc line-clamp">
-                                Phong cách thiết kế
-                            </figcaption>
-                        </figure>
-                        <figure class="PsR">
-                            <img
-                                class="w1-h1 OjFc brs-10"
-                                src="./assets/img/decor.jpg"
-                                alt="Decor"
-                            />
-                            <figcaption class="PsA cap3 Cap-ct cWc">
-                                Decor
-                            </figcaption>
-                        </figure>
-                        <figure class="tall3 PsR">
-                            <img
-                                class="w1-h1 OjFc brs-10"
-                                src="./assets/img/new-product.jpg"
-                                alt="Sản phẩm mới"
-                            />
-                            <figcaption class="PsA cap9 Cap-ct cWc line-clamp">
-                                Sản phẩm mới
-                            </figcaption>
-                        </figure>
-                        <figure class="tall2 PsR">
-                            <img
-                                class="w1-h1 OjFc brs-10"
-                                src="./assets/img/i-bed.jpg"
-                                alt="Ý tưởng phòng ngủ"
-                            />
-                            <figcaption class="PsA cap6 Cap-ct cWc line-clamp">
-                                Ý tưởng phòng ngủ
-                            </figcaption>
-                        </figure>
-                        <figure class="PsR">
-                            <img
-                                class="w1-h1 OjFc brs-10"
-                                src="./assets/img/koi.jpg"
-                                alt=""
-                            />
-                            <figcaption class="PsA cap3 Cap-ct cWc">
-                                Bể cá thủy sinh
-                            </figcaption>
-                        </figure>
+                            <p class="main-intro__desc">
+                                Chọn phong cách và sản phẩm bạn yêu thích cho
+                                ngôi nhà !
+                            </p>
+                            <div>
+                                <button class="Btn" href="#!">Khám phá</button>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+                        >
+                            <div class="row main-pic-list">
+                                <figure
+                                    class="main-pic-item col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
+                                >
+                                    <img
+                                        class="pic-intro"
+                                        src="./assets/img/i-arc.jpg"
+                                        alt="Ý tưởng thiết kế"
+                                    />
+                                    <figcaption class="cap-intro">
+                                        Ý tưởng thiết kế
+                                    </figcaption>
+                                </figure>
+
+                                <figure
+                                    class="main-pic-item col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
+                                >
+                                    <img
+                                        class="pic-intro"
+                                        src="./assets/img/decor.jpg"
+                                        alt="Decor"
+                                    />
+                                    <figcaption class="cap-intro">
+                                        Decor
+                                    </figcaption>
+                                </figure>
+
+                                <figure
+                                    class="main-pic-item col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
+                                >
+                                    <img
+                                        class="pic-intro"
+                                        src="./assets/img/new-product.jpg"
+                                        alt="Sản phẩm mới"
+                                    />
+                                    <figcaption class="cap-intro">
+                                        Sản phẩm mới
+                                    </figcaption>
+                                </figure>
+
+                                <figure
+                                    class="main-pic-item col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
+                                >
+                                    <img
+                                        class="pic-intro"
+                                        src="./assets/img/i-bed.jpg"
+                                        alt="Mẫu phòng ngủ"
+                                    />
+                                    <figcaption class="cap-intro">
+                                        Mẫu phòng ngủ
+                                    </figcaption>
+                                </figure>
+
+                                <figure
+                                    class="main-pic-item col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
+                                >
+                                    <img
+                                        class="pic-intro"
+                                        src="./assets/img/smart-home.jpg"
+                                        alt="Smart Home"
+                                    />
+                                    <figcaption class="cap-intro">
+                                        Smart Home
+                                    </figcaption>
+                                </figure>
+                                <figure
+                                    class="main-pic-item col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
+                                >
+                                    <img
+                                        class="pic-intro"
+                                        src="./assets/img/koi.jpg"
+                                        alt="Hồ cá"
+                                    />
+                                    <figcaption class="cap-intro">
+                                        Hồ cá
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <section class="Main-Us"></section>
-            </div>
-        </main>
+
+                <section class="main-4m">
+                    <div class="row">
+                        <div class="col-xl-5 offset-xl-1">
+                            <figure class="mobi-demo">
+                                <img
+                                    src="./assets/img/mobile.png"
+                                    alt="Use Mobile"
+                                />
+                                <img
+                                    src="./assets/img/mobile-s.png"
+                                    alt="Use Mobile"
+                                />
+                            </figure>
+                        </div>
+                        <div
+                            class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12"
+                        >
+                            <form class="form" action="">
+                                <div class="login-title__wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/logo/I24.png"
+                                            alt=""
+                                            class="login-title__img"
+                                        />
+                                    </a>
+                                    <span> Đăng nhập để nhận thông báo </span>
+                                </div>
+
+                                <div class="login-body___wrap">
+                                    <div class="login__wrap__btn">
+                                        <img
+                                            class="login__btn__icon"
+                                            src="./assets/signin-img/personal-18px.svg"
+                                            alt=""
+                                        />
+                                        <span class="login__btn__title">
+                                            Sử dụng email / số điện thoại
+                                        </span>
+                                    </div>
+                                    <div class="login__wrap__btn">
+                                        <img
+                                            class="login__btn__icon"
+                                            src="./assets/signin-img/google-18px.svg"
+                                            alt="Google"
+                                        />
+                                        <span class="login__btn__title">
+                                            Tiếp tục với Google
+                                        </span>
+                                    </div>
+                                    <div class="login__wrap__btn">
+                                        <img
+                                            class="login__btn__icon"
+                                            src="./assets/signin-img/facebook-18px.svg"
+                                            alt="Facebook"
+                                        />
+                                        <span class="login__btn__title">
+                                            Tiếp tục với Facebook
+                                        </span>
+                                    </div>
+                                    <p class="login-toRegister">
+                                        Bạn chưa có tài khoản?
+                                        <a href="#!">Đăng kí </a> tại đây
+                                    </p>
+                                </div>
+
+                                <div class="login-acceptTerm">
+                                    Việc tiếp tục sử dụng trang web là bạn đang
+                                    đồng ý với
+                                    <a href="#!">Điều khoản dịch vụ</a> của
+                                    chúng tôi !
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="row">
+                    <div class="col">
+                        <div class="footer">
+                            <div class="footer-about">
+                                <a href="#!"> Chính sách & Quyền riêng tư </a>
+                                <a href="#!">Điều khoản pháp lý</a>
+                                <a href="#!">Trợ giúp</a>
+                                <a href="#!">Khám phá</a>
+                                <a href="#!">Tài nguyên đại lý</a>
+                            </div>
+
+                            <div class="footer-copyright dfcenter">
+                                © 2023 iBuilder. All Rights Reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./assets/js/main.js"></script>
     </body>
 </html>

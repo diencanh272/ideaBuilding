@@ -94,10 +94,24 @@ ul {
     display: block;
 }
 
-.hide {
-    display: none;
+/* Keyframe Animation */
+
+@keyframes MobileMenu__SlideIn {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 
-.show {
-    display: block;
+@keyframes MobileMenu__fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

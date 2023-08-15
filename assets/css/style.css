@@ -25,6 +25,8 @@
     top: 0;
     z-index: 21;
     display: none;
+    animation: MobileMenu__fadeIn 0.5s ease;
+    -webkit-animation: MobileMenu__fadeIn 0.5s ease;
 }
 
 .MobileMenu-body {
@@ -34,6 +36,8 @@
     position: absolute;
     top: 0;
     width: 60%;
+    animation: MobileMenu__SlideIn 0.5s ease;
+    -webkit-animation: MobileMenu__SlideIn 0.5s ease;
 }
 
 .MobileMenu-body__scroll {

@@ -97,8 +97,6 @@
 /* About */
 
 .main-about {
-    flex: 1 1 auto;
-    background: #fff;
 }
 
 .about-form {
@@ -155,4 +153,67 @@
 
 .about-form__search-icon:hover {
     background: var(--primary-color-hov);
+}
+
+/* content category */
+
+.about-content {
+    background: var(--white-color);
+    display: flex;
+    width: 1000px;
+    padding-bottom: 48px;
+    margin: 30px auto 0;
+}
+
+.about-content__left {
+    flex: 0 0 290px;
+    width: 290px;
+}
+
+.about-category__dropdown {
+}
+
+.about-category__list {
+}
+
+.about-category__item {
+}
+
+.about-category__item-heading {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+    color: var(--text-color-default);
+}
+
+.about-category__item-heading:hover {
+    color: var(--primary-color-hov);
+}
+.about-category__item-name {
+    flex: 0 0 270px;
+    width: 270px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/*  */
+
+.about-category__item-content {
+    overflow: hidden;
+    animation: MobileMenu__fadeIn 0.3s ease;
+}
+
+.about-category__item2 {
+    max-height: 40px;
+    margin: 6px 20px 8px 0;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    color: var(--text-color-default);
+    cursor: pointer;
+}
+.about-category__item2:hover {
+    color: var(--primary-color-hov);
 }

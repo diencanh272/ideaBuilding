@@ -15,3 +15,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// About dropdown
+
+document.addEventListener("DOMContentLoaded", function () {
+    var headings = document.querySelectorAll(".about-category__item-heading");
+
+    headings.forEach(function (heading) {
+        heading.addEventListener("click", function () {
+            var content = this.nextElementSibling;
+            content.style.display =
+                content.style.display === "none" ? "block" : "none";
+        });
+    });
+});

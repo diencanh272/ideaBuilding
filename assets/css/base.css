@@ -75,6 +75,7 @@ ul {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     line-height: 1.5;
+    white-space: nowrap;
 }
 
 /* Common */
@@ -99,6 +100,10 @@ ul {
     display: block;
 }
 
+.hidden-el {
+    display: none;
+}
+
 /* Keyframe Animation */
 
 @keyframes MobileMenu__SlideIn {
@@ -118,5 +123,16 @@ ul {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes dropdown {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
 }

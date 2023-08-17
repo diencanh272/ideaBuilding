@@ -50,6 +50,11 @@ a {
     text-decoration: none;
 }
 
+input {
+    outline: none;
+    resize: none;
+}
+
 ul {
     list-style-type: none;
 }
